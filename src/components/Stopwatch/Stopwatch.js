@@ -57,6 +57,12 @@ export default class Stopwatch extends Component {
 		});
 	};
 
+	keyDown = (e) => {
+		if (e.keyCode === 32) {
+			this.toggleState();
+		}
+	};
+
 	render() {
 		const { totalTime } = this.state;
 
@@ -65,7 +71,7 @@ export default class Stopwatch extends Component {
 				<div
 					className="time"
 					onClick={this.toggleState}
-					onKeyDown={this.toggleState}
+					onKeyDown={(e) => this.keyDown(e)}
 					role="button"
 					tabIndex="0"
 				>
