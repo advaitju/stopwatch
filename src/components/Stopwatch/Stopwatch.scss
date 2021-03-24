@@ -1,0 +1,43 @@
+$main-color: #aaa;
+$highlight: #444;
+$dark-color: #444;
+
+.stopwatch {
+	border-bottom: 1px solid $dark-color;
+	padding: 1rem 0 2.5rem 0;
+	font-weight: 100;
+
+	&:last-child {
+		border: 0;
+	}
+}
+
+.time {
+	color: $main-color;
+	font-size: 12rem;
+	cursor: pointer;
+	outline: 0;
+}
+
+.hundred-milliseconds {
+	font-size: 4rem;
+	margin-left: 1rem;
+	opacity: 0.6;
+}
+
+.clear-timer {
+	border: 1px solid $main-color;
+	border-radius: 5px;
+	background-color: transparent;
+	color: $main-color;
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 0.5rem 0.875rem;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $highlight;
+	}
+}
