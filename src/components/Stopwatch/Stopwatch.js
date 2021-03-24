@@ -49,8 +49,11 @@ export default class Stopwatch extends Component {
 	};
 
 	clearTimer = () => {
+		const now = new Date();
+
 		this.setState({
-			startTime: new Date(),
+			startTime: now,
+			totalTime: 0,
 		});
 	};
 
