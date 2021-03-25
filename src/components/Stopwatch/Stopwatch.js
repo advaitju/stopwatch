@@ -80,8 +80,20 @@ export default class Stopwatch extends Component {
 						{new Date(totalTime).toISOString().substr(20, 1)}
 					</span>
 				</div>
-				<button className="clear-timer" type="button" onClick={this.clearTimer}>
+
+				<button
+					className="timer-button clear-timer"
+					type="button"
+					onClick={this.clearTimer}
+				>
 					Reset
+				</button>
+				<button
+					className="timer-button toggle-timer"
+					type="button"
+					onClick={this.toggleState}
+				>
+					Toggle
 				</button>
 			</div>
 		);
