@@ -82,18 +82,18 @@ export default class Stopwatch extends Component {
 				</div>
 
 				<button
-					className="timer-button clear-timer"
-					type="button"
-					onClick={this.clearTimer}
-				>
-					Reset
-				</button>
-				<button
 					className="timer-button toggle-timer"
 					type="button"
 					onClick={this.toggleState}
 				>
 					Toggle
+				</button>
+				<button
+					className="timer-button clear-timer"
+					type="button"
+					onClick={this.clearTimer}
+				>
+					Reset
 				</button>
 			</div>
 		);

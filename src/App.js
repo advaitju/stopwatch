@@ -36,7 +36,7 @@ export default class App extends PureComponent {
 						type="button"
 						onClick={this.clearAll}
 					>
-						Clear all
+						Reset all
 					</button>
 
 					<Stopwatch />
