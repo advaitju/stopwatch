@@ -73,7 +73,7 @@ export default class Stopwatch extends Component {
 					onClick={this.toggleState}
 					onKeyDown={(e) => this.keyDown(e)}
 					role="button"
-					tabIndex="0"
+					tabIndex="-1"
 				>
 					{new Date(totalTime).toISOString().substr(11, 8)}
 					<span className="hundred-milliseconds">
